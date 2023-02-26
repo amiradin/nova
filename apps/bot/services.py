@@ -27,9 +27,9 @@ def send_user_data(data):
     Метод отправки POST запроса данных о клиенте https://s1-nova.ru/app/private_test_python/
     """
     phone_number = data["message"]["text"]
-    # login = data["message"]["login"]
+    login = data["message"]["chat"]["first_name"]
     headers = {"Content-Type": "application/json; charset=utf-8"}
-    body = {"phone_number": phone_number, "login": "user667"}
+    body = {"phone_number": phone_number, "login": login}
 
     payload = json.dumps(body, indent=2)
     response = requests.post(url=URL_S1_NOVA, headers=headers, data=payload)
