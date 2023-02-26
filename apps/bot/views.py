@@ -22,7 +22,7 @@ keyboard = ReplyKeyboardMarkup(keyboard=[])
 def index(request):
     if request.method == "POST":
         body = request.body.decode("utf-8")
-        data = json.loads(data)
+        data = json.loads(body)
 
         try:
             chat_id = data["message"]["chat"]["id"]
