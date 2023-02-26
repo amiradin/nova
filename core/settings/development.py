@@ -1,7 +1,7 @@
 from .base import *
 from decouple import config
 
-ALLOWED_HOSTS = ["98b7-37-99-39-112.eu.ngrok.io"]
+ALLOWED_HOSTS = ["*"]
 # https://api.telegram.org/bot6069323888:AAGfimvGsrGFFyTQXZjE436qpQPqdpMb5KE/setWebhook?url=https://98b7-37-99-39-112.eu.ngrok.io/
 # https://api.telegram.org/bot6069323888:AAGfimvGsrGFFyTQXZjE436qpQPqdpMb5KE/deleteWebhook?url=https://98b7-37-99-39-112.eu.ngrok.io/
 
